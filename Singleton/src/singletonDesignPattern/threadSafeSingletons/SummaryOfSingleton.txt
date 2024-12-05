@@ -1,0 +1,20 @@
+Summary of Variants:
+
+Eager Initialization Singleton:
+    Instance is created when the class is loaded.
+    Simple but inefficient if the instance is never used.
+
+
+Lazy Initialization Singleton:
+    Instance is created when it is first needed.
+    Thread-safe with synchronization, but could have performance overhead due to synchronization.
+
+
+Double-Checked Locking Singleton:
+    Efficient in multi-threaded environments by reducing synchronization overhead.
+    Instance is created only when needed, with minimal locking.
+
+
+Bill Pugh Singleton (Static Inner Class):
+    Most efficient and thread-safe method using a static inner class.
+    Instance is created lazily and the class loader mechanism ensures thread-safety.
