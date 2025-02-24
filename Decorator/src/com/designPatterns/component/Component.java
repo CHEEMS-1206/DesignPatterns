@@ -1,4 +1,5 @@
 package com.designPatterns.component;
 
-public interface Coffee {
+public interface Component {
+    int getCoffeePrice();
 }
